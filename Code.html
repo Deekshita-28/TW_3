@@ -1,0 +1,49 @@
+<!--TERMWRK 3 ANMATION-->
+<html>
+    <head>
+        <style>
+            div.L{
+                width:100px;
+                height:100px;
+                background:red;
+                transition: width 6s;
+                transition: height 6s;
+                border-color:black;
+
+            }
+
+            div.L:hover{
+            width:300px;
+            height:300px;
+            }
+            div.An{
+                border-style:dotted;
+                width:100px;
+                height:100px;
+                background-color:yellow;
+                position:relative;
+                animation-name: example;
+                animation-duration: 4s;
+            }
+
+            @keyframes example{
+                 0%{background-color:yellow; left:0px; top:0px; border-radius:0px; }
+                12.5%{background-color:orange; left:100px; top:100px; border-radius:25px;}
+                25%{background-color:crimson; left:200px; top:200px; border-radius:25px;}
+                50%{background-color:red; left:300px; top:300px;  border-radius:25px;}
+               62.5%{background-color:crimson; left:400px; top:200px;border-radius:25px;}
+                 75%{background-color:orange; left:500px; top:100px;border-radius:25px;}
+                 100%{background-color:yellow; left:600px; top:0px;border-radius:0px;}
+            }
+        </style>
+    </head> 
+    
+    <body>
+       <h2>ANIMATION</h2>
+        <div class="An"></div>
+
+         <h1>THE TRANSITION PROPERTY</h1>
+        <p>Hover over the div element below, to see the transition</p>
+        <div class="L"></div>
+    </body>
+</html>        
